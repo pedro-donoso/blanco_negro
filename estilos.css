@@ -11,3 +11,17 @@ body{
     align-items: center;
 }
 
+.txtInput{
+    width: 600px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.btn{
+    width:200px;
+    height: 30px;
+    border-radius: 5px;
+    background: none;
+    color: white;
+    border: 1px solid white;
+}
