@@ -38,7 +38,7 @@ const argv = yargs
                     }
 
                     const params = url.parse(req.url, true).query;
-                    const url_imagen = params.ruta;
+                    const url_imagen = params.rutaImagen;
 
                     if (req.url.includes('/imagen')) {
 
