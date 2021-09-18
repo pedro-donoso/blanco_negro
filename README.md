@@ -23,7 +23,7 @@ npm install jimp
 4. Run in terminal:
 
 ```
-node index.js levantar_servidor -k=123
+node index.js server_up -k=123
 
 ```
 * example url image:
