@@ -30,3 +30,6 @@ node index.js levantar_servidor -k=123
 https://www.collinsdictionary.com/images/thumb/puppy_176109785_250.jpg?version=4.0.181
 
 ```
+**The image is resized to 150px x 150px and saved in the project in .jpg format!**
+
+**URL images must be larger than 150px x 150px (minimum size)!**
