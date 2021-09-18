@@ -36,4 +36,5 @@ https://www.collinsdictionary.com/images/thumb/puppy_176109785_250.jpg?version=4
 
 **URL images must be larger than 150px x 150px (minimum size)!**
 
-![perro](https://user-images.githubusercontent.com/68760595/133867630-582fdd1a-75d2-4d23-bd54-c6197ff0f016.png)
+![perro](https://user-images.githubusercontent.com/68760595/133868816-3d0cb537-024d-4d40-9c78-b5057fdfbd2b.png)
+
