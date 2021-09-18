@@ -1,0 +1,23 @@
+{
+  "name": "blanco_negro",
+  "version": "1.0.0",
+  "description": "blanco_negro",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pedro-donoso/blanco_negro.git"
+  },
+  "author": "pedro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pedro-donoso/blanco_negro/issues"
+  },
+  "homepage": "https://github.com/pedro-donoso/blanco_negro#readme",
+  "dependencies": {
+    "jimp": "^0.16.1",
+    "yargs": "^17.1.1"
+  }
+}
