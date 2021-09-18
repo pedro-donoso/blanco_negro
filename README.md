@@ -38,5 +38,6 @@ https://www.collinsdictionary.com/images/thumb/puppy_176109785_250.jpg?version=4
 
 **The image also reduces its quality by 50%!**
 
-![perro](https://user-images.githubusercontent.com/68760595/133868816-3d0cb537-024d-4d40-9c78-b5057fdfbd2b.png)
+![perrito](https://user-images.githubusercontent.com/68760595/133870136-be271221-3575-405b-a50d-7a8be0e87938.png)
+
 
