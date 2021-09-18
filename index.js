@@ -76,7 +76,7 @@ const argv = yargs
                     // puerto
                     .listen(8080, () => console.log('Actualmente escucho el puerto 8080'))
                 :
-                console.log('Incorrecta Key incorrecta, ingrese 123.')
+                console.log('La Key ingresada es incorrecta, escribe por terminal: node index.js server_up -k=123')
         }
     )
     .help().argv
