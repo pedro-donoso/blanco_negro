@@ -1,14 +1,17 @@
+// agrego constantes
 const http = require('http');
 const fs = require('fs');
 const url = require('url');
 const yargs = require('yargs');
 const jimp = require('jimp');
 
+// agrego key
 const key = 123;
 
+// agrego yargs
 const argv = yargs
     .command(
-        'levantar_servidor',
+        'server_up',
         'Comando para levantar servidor',
         {
             key: {
