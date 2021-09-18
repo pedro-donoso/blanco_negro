@@ -45,7 +45,7 @@ const argv = yargs
                         jimp.read(url_imagen,
                             (err, imagen) => {
                                 imagen
-                                    .resize(350, jimp.AUTO)
+                                    .resize(150, 150, jimp.AUTO)
                                     .grayscale()
                                     .quality(60)
                                     .writeAsync('newImg.jpg')

@@ -8,34 +8,27 @@
     <title>Blanco y Negro</title>
     <!-- enlace a estilos -->
     <link rel='stylesheet' href='http://localhost:8080/estilos' />
-
     <!-- fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-   <!-- fonts -->
-
-    </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!-- fonts -->
+</head>
 
 <body>
-   <h2 class="titulo">BLACK & WHITE SPA: </h2>
- <div class="container">
-
-
-   
-        
+    <h1 class="titulo">BLACK & WHITE SPA: </h1>
+    <div class="container">
         <!-- agrego url -->
         <form action='http://localhost:8080/imagen'>
-            <h3>La URL de tu imagen va aqui:</h3>
-            <input type="text" id="" name="rutaImagen" class="txtInput">
-            <br />
-            <br />
-            <button class="btn-outline-danger">Cargar imagen al Servidor</button>
+            <h2>Pega la URL de una imagen:</h2>
+            <div>
+                <input type="text" name="rutaImagen" class="txtInput" placeholder="LA URL DE TU IMAGEN VA AQUI">
+            </div>
+            <p>(desde 150 x 150)</p>
+            <button class="myButton">Cargar imagen al Servidor</button>
         </form>
-
-
     </div>
-    
-
+    </script>
 </body>
+
 </html>
