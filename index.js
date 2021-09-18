@@ -10,12 +10,16 @@ const key = 123;
 
 // agrego yargs
 const argv = yargs
+    
+    //comando para levantar servidor
     .command(
         'server_up',
-        'Comando para levantar servidor',
+        'Comando que levanta el servidor',
         {
+
+            // argumento de validacin de la clave para acceder
             key: {
-                describe: 'Argumento para validar la clave de acceso',
+                describe: 'Argumento que permite validar clave de acceso',
                 demand: true,
                 alias: 'k',
             },
@@ -24,6 +28,8 @@ const argv = yargs
         (args) => {
             args.key == key
                 ?
+
+                // crear servidor
                 http.createServer((req, res) => {
 
                     if (req.url == '/') {
@@ -33,6 +39,7 @@ const argv = yargs
                         })
                     }
 
+                    // asignar estilos
                     if (req.url == '/estilos') {
                         res.writeHead(200, { 'Content-Type': 'text/css' });
                         fs.readFile('estilos.css', (err, css) => {
@@ -40,20 +47,24 @@ const argv = yargs
                         })
                     }
 
+                    // url imagen
                     const params = url.parse(req.url, true).query;
                     const url_imagen = params.rutaImagen;
 
                     if (req.url.includes('/imagen')) {
 
+                        // jimp
                         jimp.read(url_imagen,
                             (err, imagen) => {
                                 imagen
+                                    
+                                    // nuevas propiedades imagen
                                     .resize(150, 150, jimp.AUTO)
                                     .grayscale()
-                                    .quality(60)
-                                    .writeAsync('newImg.jpg')
+                                    .quality(50)
+                                    .writeAsync('newPhoto.jpg')
                                     .then(() => {
-                                        fs.readFile('newImg.jpg', (err, Imagen) => {
+                                        fs.readFile('newPhoto.jpg', (err, Imagen) => {
                                             res.writeHead(200, { 'Content-Type': 'image/jpeg' });
                                             res.end(Imagen);
                                         })
@@ -61,9 +72,11 @@ const argv = yargs
                             })
                     }
                 })
-                    .listen(8080, () => console.log('Escuchando el puerto 8080'))
+                    
+                    // puerto
+                    .listen(8080, () => console.log('Actualmente escucho el puerto 8080'))
                 :
-                console.log('Key incorrecta, intente nuevamente.')
+                console.log('Incorrecta Key incorrecta, ingrese 123.')
         }
     )
     .help().argv
